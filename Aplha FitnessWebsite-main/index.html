@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alpha Fitness - The best fitness gym</title>
+
+  <!-- CSS & Favicon -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style1.css">
+  <link rel="stylesheet" href="utils.css">
+  <link rel="icon" type="image/x-icon" href="dumbell.png">
+  <script src="timer.js"></script>
+
+  <style>
+    /* FIX SCROLL ISSUE */
+    body {
+      margin: 0;
+      overflow-x: hidden; /* Only hide horizontal scroll */
+      color: #fff;
+      position: relative;
+    }
+
+    /* Fullscreen Background Video */
+    video.bg-video {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      min-width: 100%;
+      min-height: 100%;
+      transform: translate(-50%, -50%);
+      z-index: -2;
+      object-fit: cover;
+    }
+
+    /* Semi-transparent overlay for readability */
+    .video-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      z-index: -1;
+    }
+
+    /* Text readability */
+    h1, h2, p, li {
+      color: #fff;
+    }
+
+    /* Add some spacing and visual polish */
+    .section1 {
+      padding: 4rem 1rem;
+    }
+
+    .boxes {
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 12px;
+      padding: 2rem;
+      margin: 2rem 0;
+    }
+
+    footer {
+      background-color: rgba(0, 0, 0, 0.7);
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+      border-top: 1px solid #00e676;
+    }
+
+    /* Responsive tweaks */
+    @media (max-width: 768px) {
+      .flex {
+        flex-direction: column;
+      }
+      .topright img {
+        width: 90%;
+      }
+      .boxes {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+
+<body class="overflow-x-hidden">
+  <video autoplay muted loop playsinline class="bg-video">
+    <source src="https://cdn-images.cure.fit/www-curefit-com/video/upload/c_fill,w_1400,ar_1.77,q_auto:eco,dpr_2,vc_auto,f_auto/video/test/we-are-cult-web.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <div class="video-overlay"></div>
+
+  <div class="container mx-auto">
+    <header>
+      <nav class="flex justify-between">
+        <div class="logo font-bold flex items-center text-blue">Alpha Fitness</div>
+        <ul class="navbar flex items-center">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="Sign Up.html">Sign Up</a></li>
+          <li><a href="contact us.html">Contact Us</a></li>
+          <li><button class="btn"><a href="join now.html">Join Now</a></button></li>
+        </ul>
+      </nav>
+      <hr>
+    </header>
+
+    <main class="min-h-screen">
+      <section class="section1">
+        <div class="flex">
+          <div class="topleft flex flex-col justify-center px-2">
+            <div class="text-center">
+              <img class="dumbellimg" src="dumbell.png" alt="">
+            </div>
+            <h1 class="my-1 text-center">
+              <p class="blue-text">Your destination for fitness and well-being.</p>
+            </h1>
+            <div class="buttons">
+              <button class="btn"><a href="join now.html">Join now</a></button>
+              <button class="btn"><a href="contact us.html">Contact Us</a></button>
+            </div>
+          </div>
+          <div class="topright flex justify-center">
+            <img class="gymimg" src="home-img.png" alt="">
+          </div>
+        </div>
+      </section>
+
+      <hr>
+
+      <div class="boxes flex justify-center">
+        <div class="box">
+          <h2>Standard</h2>
+          <ul>
+            <li class="highlighted">₹1000/month</li>
+            <li>0 users included</li>
+            <li>2 GB of storage</li>
+            <li>Email support</li>
+            <li>Help center access</li>
+            <li><button class="btn"><a href="join now.html">Join Now</a></button></li>
+          </ul>
+        </div>
+
+        <div class="box">
+          <h2>Pro</h2>
+          <ul>
+            <li class="highlighted">₹1500/month</li>
+            <li>0 users included</li>
+            <li>5 GB of storage</li>
+            <li>Email support</li>
+            <li>Trainer Support</li>
+            <li><button class="btn"><a href="join now.html">Join Now</a></button></li>
+          </ul>
+        </div>
+
+        <div class="box">
+          <h2>Elite</h2>
+          <ul>
+            <li class="highlighted">₹3000/month</li>
+            <li>0 users included</li>
+            <li>12 GB of storage</li>
+            <li>Email support</li>
+            <li>Trainer Support</li>
+            <li>Proper Diet Control Plans</li>
+            <li><button class="btn"><a href="join now.html">Join Now</a></button></li>
+          </ul>
+        </div>
+      </div>
+
+      <hr>
+
+      <section class="section3">
+        <h1 class="text-center my-2">Compare Plans</h1>
+        <div class="container plantable">
+          <table class="table text-center">
+            <thead>
+              <tr>
+                <th></th>
+                <th>Standard</th>
+                <th>Pro</th>
+                <th>Elite</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row" class="text-start">Public</th>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>Yes</td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-start">Private</th>
+                <td>-</td>
+                <td>Yes</td>
+                <td>Yes</td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-start">Permissions</th>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>Yes</td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-start">Sharing</th>
+                <td>-</td>
+                <td>Yes</td>
+                <td>Yes</td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-start">Unlimited members</th>
+                <td>-</td>
+                <td>Yes</td>
+                <td>Yes</td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-start">Extra security</th>
+                <td>-</td>
+                <td>-</td>
+                <td>Yes</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      © 2025 Alpha Fitness 
+    </footer>
+  </div>
+</body>
+</html>

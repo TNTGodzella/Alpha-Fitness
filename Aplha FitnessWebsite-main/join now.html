@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alpha Fitness - The best fitness gym </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="timer.js"></script>
+    <link rel="stylesheet" href="utils.css">
+    <link rel="icon" type="image/x-icon" href="dumbell.png">
+    <link rel="stylesheet" href="style5.css">
+        <style>
+            /* Style for horizontal radio buttons */
+            .horizontal-radio label {
+                display: flex;
+                align-items: center;
+            }
+    
+            /* Style for radio buttons */
+            .horizontal-radio input[type="radio"] {
+                margin-right: 5px; /* Add space between radio button and label */
+            }
+        </style>
+    <!-- Add this at the end of the body -->
+<script>
+    document.getElementById('card-number').addEventListener('input', function (e) {
+        let formattedInput = e.target.value.replace(/\D/g, '');
+
+        if (formattedInput.length > 16) {
+            formattedInput = formattedInput.slice(0, 16);
+        }
+
+        formattedInput = formattedInput.replace(/(\d{4})/g, '$1 ').trim();
+        e.target.value = formattedInput;
+
+        // Provide feedback about the card number length
+        const cardNumberInfo = document.getElementById('card-number-info');
+        if (formattedInput.length === 16) {
+            cardNumberInfo.innerText = 'Valid card number';
+            cardNumberInfo.style.color = 'green';
+        } else {
+            cardNumberInfo.innerText = 'Enter a valid 16-digit card number.';
+            cardNumberInfo.style.color = 'red';
+        }
+    });
+</script>
+
+</head>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alpha Fitness - The best fitness gym</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utils.css">
+    <link rel="icon" type="image/x-icon" href="dumbell.png">
+    <style>
+        /* Your existing styles go here */
+    </style>
+</head>
+
+<body class='overflow-x-hidden'>
+    <div class="container mx-auto">
+        <header>
+            <nav class="flex justify-between">
+                <div class="logo font-bold flex items-center text-blue">Alpha Fitness</div>
+                <ul class="navbar flex items-center">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="Sign Up.html">Sign up</a></li>
+                    <li><a href="contact us.html">Contact Us</a></li>
+                    <li><button class="btn">Join Now</button></li>
+                </ul>
+            </nav>
+            <hr>
+        </header>
+
+        <main class="min-h-screen">
+            <section class="section1">
+                <div class="flex">
+                    <div class="topleft flex flex-col justify-center px-2">
+                        <div class=" text-center">
+                            <img class="dumbellimg" src="dumbell.png" alt="">
+                        </div>
+                        <h1 class="my-1 text-center">Your destination for fitness and well-being.</h1>
+                    </div>
+                    <div class="topright flex justify-center">
+                        <img class="gymimg" src="wbesite_pic_2-removebg-preview.png" alt="">
+                    </div>
+                </div>
+            </section>
+            <hr>
+
+            <section class="payment-form">
+                <h2>Membership Payment</h2>
+                <p>Choose your membership plan and proceed with the payment:</p>
+
+                <div class="horizontal-radio">
+                    <label>
+                        <input type="radio" name="option" value="option1"> Standard
+                    </label>
+                    <label>
+                        <input type="radio" name="option" value="option2"> Pro
+                    </label>
+                    <label>
+                        <input type="radio" name="option" value="option3"> Elite
+                    </label>
+                </div>
+
+                <form action="process_signup.php" method="POST" id="signup-form">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <!-- Payment details -->
+                    <h3>Payment Details</h3>
+                    <label for="card-number">Card Number:</label>
+                    <input type="text" id="card-number" name="card-number" required maxlength="19">
+                    <small id="card-number-info">Enter a valid 16-digit card number.</small>
+
+                    <label for="expiration-date">Expiration Date:</label>
+                    <input type="text" id="expiration-date" name="expiration-date" placeholder="MM/YY" required>
+
+                    <label for="cvv">CVV:</label>
+                    <input type="text" id="cvv" name="cvv" required maxlength="3">
+
+                    <button type="submit">Pay Now</button>
+                </form>
+            </section>
+        </main>
+    </div>
+</body>
+
+</html>
+
+</html>

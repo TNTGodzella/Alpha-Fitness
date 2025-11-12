@@ -1,0 +1,53 @@
+/* Reset some default styles */
+
+.hero {
+    background-image: url('gym-image.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: #fff;
+    padding: 100px 0;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+/* Button styles */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #FF5733;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #FF4213;
+}
+
+/* Sections styles */
+.classes, .trainers, .contact {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.classes h2, .trainers h2, .contact h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+

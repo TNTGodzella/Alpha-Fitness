@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alpha Fitness - The best fitness gym </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="timer.js"></script>
+    <link rel="stylesheet" href="utils.css">
+    <link rel="icon" type="image/x-icon" href="dumbell.png">
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+    <main class="min-h-screen">
+    <div class="container mx-auto">
+        <header>
+            <nav class="flex justify-between">
+                <div class="logo font-bold flex items-center text-blue">Alpha Fitness</div>
+                <ul class="navbar flex items-center">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="Sign Up.html">Sign Up</a></li>
+                    <li><a href="contact us.html">Contact Us</a></li>
+                    <li><button class="btn"><a href="join now.html">Join Now</a></button></li>
+                </ul>
+            </nav>
+          
+        </header>
+        <hr>
+        <section class="section1">
+            <div class="flex">
+                <div class="topleft flex flex-col justify-center px-2">
+                    <div class=" text-center">
+                        <img class="dumbellimg" src="dumbell.png" alt="">
+                    </div>
+                    <h1 class="my-1 text-center">Your destination for fitness and well-being.</h1>
+                    
+                </div>
+                <div class="topright flex justify-center">
+                    <img class="gymimg" src="choose-img.png" alt="">
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section>
+            <div id="contact-info">
+                <h2>Contact Information</h2>
+                <address>
+                    <p><strong>Address:</strong> 542, Hauz Khas, Delhi</p>
+                    <p><strong>Phone:</strong> 538579XXXX</p>
+                    <p><strong>Email:</strong> <a href="AlphaFitness@gmail.com">AlphaFitness@gmail.com</a></p>
+                    <!-- <p><strong>Hours of Operation:</strong> Your Gym Operating Hours</p> -->
+                </address>
+            </div>
+        </section>
+        <hr>
+        <section>
+            <div id="contact-form">
+                <h2>for any query</h2>
+                <form action="submit_form.php" method="POST">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="message">your query</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                    </div>
+    
+                    <div class="form-group">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
