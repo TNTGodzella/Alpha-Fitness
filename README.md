@@ -17,4 +17,3 @@ Alpha Fitness is a modern, responsive gym website built with HTML, CSS, and Java
 
 ---
 
-## 🧩 Project Structure
